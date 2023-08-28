@@ -1,0 +1,35 @@
+// 定义proto语法版本，这里指定使用proto3版本
+syntax = "proto3";
+
+// 这里随便定义个包名
+package grpc.user;
+
+// go需要增加这个选项，否则会报错；值用分号分隔，前者表示生成*.pb.go文件目录，会自动创建，这里指定当前目录中的protobuf目录，后者表示生成go文件里的包名，最好和当前目录名一致否则无法使用到
+option go_package = "./pb;pb";
+
+// 定义服务，可以有多个方法
+service UserService {
+  // 空函数，用与检测客户端和服务端是否通畅
+  rpc Ping (Empty) returns (PingResponse) {}
+  // 使用rpc开头标识方法
+  rpc Login (LoginRequest) returns (LoginResponse) {}
+}
+
+message Empty {}
+
+message PingResponse {
+  string message = 1;
+}
+
+message LoginRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message LoginResponse {
+  int32 code = 1;
+  string message = 2;
+}
+
+// 执行命令 在go mod 目录执行
+// protoc --go_out=./idl --go-grpc_out=./idl ./idl/user.proto

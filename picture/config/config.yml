@@ -1,0 +1,5 @@
+server:
+  name: picture
+  host: :8080
+  version: 1.0.0
+  weight : 1

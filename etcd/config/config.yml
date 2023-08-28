@@ -1,0 +1,14 @@
+# 项目配置
+project:
+  name: etcd
+
+# 当前服务配置
+server:
+  name: demo
+  host: localhost:8888
+  version: 1.0.0
+
+# 注册中心配置
+etcd:
+  address:
+    - xiaoyucc521.com:2379

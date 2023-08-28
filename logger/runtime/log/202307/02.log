@@ -1,0 +1,2 @@
+[ERROR] 2023/07/02 16:00:11 main.go:20: open /Users/xiaoyu/www/go/src/works/demo/logger/runtime/log/202307/02.log: no such file or directory
+[ERROR] 2023/07/02 16:00:11 main.go:27: 错误

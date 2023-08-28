@@ -1,0 +1,21 @@
+# 项目
+project:
+  name: etcd
+
+# 当前服务
+server:
+  name: user #  服务名
+  host: localhost:8888 # 地址
+  version: 1.0.0  # 版本
+  weight: 1  # 权重
+
+# 注册中心
+etcd:
+  addr:
+    - xiaoyucc521.com:2379
+
+# 注册中心的服务
+services:
+  user:
+    name: user
+    loadBalance: true

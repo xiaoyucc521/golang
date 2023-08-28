@@ -1,0 +1,8 @@
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  database: test
+  username: xiaoyu
+  password: xiaoyu
+  charset: utf8mb4
+  prefix: xy_
