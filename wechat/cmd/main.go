@@ -17,7 +17,7 @@ type AccessTokenResponse struct {
 func main() {
 	retry := 0
 Do:
-	url := "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx3b21c2907cb96c00&secret=49e41300cbf0bac900b73f85d9748819"
+	url := "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=&secret="
 	res, err := http.Get(url)
 	if err != nil {
 		panic(err)
