@@ -6,6 +6,6 @@ server:
 
 elasticsearch:
   host:
-    - http://xiaoyucc521.com:9200
+    - 127.0.0.1:9200
   username: elastic
   password: xiaoyucc521.

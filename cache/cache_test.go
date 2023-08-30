@@ -8,7 +8,7 @@ import (
 
 func TestNewCache(t *testing.T) {
 	option := map[string]interface{}{
-		"addr":     "xiaoyucc521.com:6379",
+		"addr":     "127.0.0.1:6379",
 		"password": "123456",
 		"db":       0,
 		"prefix":   "test:",

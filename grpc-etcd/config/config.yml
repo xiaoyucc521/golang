@@ -12,7 +12,7 @@ server:
 # 注册中心
 etcd:
   address:
-    - xiaoyucc521.com:2379
+    - 127.0.0.1:2379
 
 services:
   user:
